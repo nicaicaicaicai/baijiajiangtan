@@ -4,9 +4,14 @@
 
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
+import Banner from './elements/Banner'
 
 export default class Hot extends Component {
   render() {
-    return <View />
+    return (
+      <View>
+        <Banner />
+      </View>
+    )
   }
 }

@@ -1,3 +1,4 @@
+import 'taro-ui/dist/style/index.scss'
 import Taro, { Component, Config } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Hot from './pages/Hot/index'
@@ -7,9 +8,9 @@ import './app.less'
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
+if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5') {
+  require('nerv-devtools')
+}
 
 class App extends Component {
   /**
@@ -27,6 +28,38 @@ class App extends Component {
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     }
+    // tabBar: {
+    //   color: '#626567',
+    //   selectedColor: '#2A8CE5',
+    //   backgroundColor: '#FBFBFB',
+    //   borderStyle: 'white',
+    //   list: [
+    //     {
+    //       pagePath: 'pages/hot/index',
+    //       text: '热门推荐',
+    //       iconPath: './asset/images/index.png',
+    //       selectedIconPath: './asset/images/index_focus.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/daily/index',
+    //       text: '每日更新',
+    //       iconPath: './asset/images/discovery.png',
+    //       selectedIconPath: './asset/images/discovery_focus.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/category/index',
+    //       text: '分类',
+    //       iconPath: './asset/images/burger.png',
+    //       selectedIconPath: './asset/images/burger_focus.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/setting/index',
+    //       text: '设置',
+    //       iconPath: './asset/images/burger.png',
+    //       selectedIconPath: './asset/images/burger_focus.png'
+    //     }
+    //   ]
+    // }
   }
 
   componentDidMount() {}

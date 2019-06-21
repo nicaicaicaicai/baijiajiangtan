@@ -6,7 +6,8 @@ module.exports = {
   weapp: {},
   h5: {
     devServer: {
-      port: 9900
+      port: 9900,
+      open: false
     }
   }
 }
