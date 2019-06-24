@@ -26,7 +26,7 @@ export default class PlayAudio extends Component<Props> {
     return (
       <View>
         <Audio
-          id={detail.SectionID + ''}
+          id="video"
           src={detail.SectionLinkURL}
           name={detail.SectionName}
           author={detail.BookName}

@@ -8,6 +8,10 @@ import BookDetailList from './BookDetailList'
 import BookDetailHeader from './BookDetailHeader'
 
 export default class Detail extends Component {
+  config = {
+    navigationBarTitleText: '详情'
+  }
+
   render() {
     return (
       <View>

@@ -17,6 +17,7 @@ interface Props {
 export default class BookDetailHeader extends Component<Props> {
   render() {
     const { bookId } = this.$router.params
+    console.log(this.$router.params)
     const bookDetail: HotCardInterface = this.props.hotStore.getDetailById(bookId)
     return (
       <View className="book_detail_header">

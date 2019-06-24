@@ -21,52 +21,45 @@ class App extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    pages: [
-      'pages/hot/index',
-      'pages/daily/index',
-      'pages/category/index',
-      'pages/setting/index',
-      'pages/detail/index',
-      'pages/detail/PlayAudio'
-    ],
+    pages: ['pages/hot/index', 'pages/daily/index', 'pages/category/index', 'pages/setting/index'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: '百家讲坛',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#626567',
+      selectedColor: '#2A8CE5',
+      backgroundColor: '#FBFBFB',
+      borderStyle: 'white',
+      list: [
+        {
+          pagePath: 'pages/hot/index',
+          text: '热门推荐',
+          iconPath: './asset/images/tabbar/index.png',
+          selectedIconPath: './asset/images/tabbar/index_focus.png'
+        },
+        {
+          pagePath: 'pages/daily/index',
+          text: '每日更新',
+          iconPath: './asset/images/tabbar/discovery.png',
+          selectedIconPath: './asset/images/tabbar/discovery_focus.png'
+        },
+        {
+          pagePath: 'pages/category/index',
+          text: '分类',
+          iconPath: './asset/images/tabbar/burger.png',
+          selectedIconPath: './asset/images/tabbar/burger_focus.png'
+        },
+        {
+          pagePath: 'pages/setting/index',
+          text: '个人',
+          iconPath: './asset/images/tabbar/user.png',
+          selectedIconPath: './asset/images/tabbar/user_focus.png'
+        }
+      ]
     }
-    // tabBar: {
-    //   color: '#626567',
-    //   selectedColor: '#2A8CE5',
-    //   backgroundColor: '#FBFBFB',
-    //   borderStyle: 'white',
-    //   list: [
-    //     {
-    //       pagePath: 'pages/hot/index',
-    //       text: '热门推荐',
-    //       iconPath: './asset/images/tabbar/index.png',
-    //       selectedIconPath: './asset/images/tabbar/index_focus.png'
-    //     },
-    //     {
-    //       pagePath: 'pages/daily/index',
-    //       text: '每日更新',
-    //       iconPath: './asset/images/tabbar/discovery.png',
-    //       selectedIconPath: './asset/images/tabbar/discovery_focus.png'
-    //     },
-    //     {
-    //       pagePath: 'pages/category/index',
-    //       text: '分类',
-    //       iconPath: './asset/images/tabbar/burger.png',
-    //       selectedIconPath: './asset/images/tabbar/burger_focus.png'
-    //     },
-    //     {
-    //       pagePath: 'pages/setting/index',
-    //       text: '个人',
-    //       iconPath: './asset/images/tabbar/user.png',
-    //       selectedIconPath: './asset/images/tabbar/user_focus.png'
-    //     }
-    //   ]
-    // }
   }
 
   componentDidMount() {}
