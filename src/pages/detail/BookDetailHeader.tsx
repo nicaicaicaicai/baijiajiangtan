@@ -10,14 +10,14 @@ import './BookDetailHeader.less'
 
 interface Props {
   hotStore: HotStoreIF
+  bookId: string
 }
 
 @inject('hotStore')
 @observer
 export default class BookDetailHeader extends Component<Props> {
   render() {
-    const { bookId } = this.$router.params
-    console.log(this.$router.params)
+    const { bookId } = this.props
     const bookDetail: HotCardInterface = this.props.hotStore.getDetailById(bookId)
     return (
       <View className="book_detail_header">

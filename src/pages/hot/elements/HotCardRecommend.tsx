@@ -49,7 +49,9 @@ export default class HotCardRecommend extends Component<Props, State> {
           return (
             <View key={index} className="hot_row">
               {cardList.map((card: HotCardInterface) => {
-                return <Card key={card.BookID} card={card} className={'card'} onClick={this.handleCardClick} />
+                return (
+                  <Card key={card.BookID} card={card} className={'card'} onClick={() => this.handleCardClick(card)} />
+                )
               })}
             </View>
           )

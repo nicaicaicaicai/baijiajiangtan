@@ -13,9 +13,10 @@ export default class Detail extends Component {
   }
 
   render() {
+    const { bookId } = this.$router.params
     return (
       <View>
-        <BookDetailHeader hotStore={{} as any} />
+        <BookDetailHeader hotStore={{} as any} bookId={bookId} />
         <BookDetailList detailStore={{} as any} />
       </View>
     )
