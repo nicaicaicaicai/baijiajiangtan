@@ -4,9 +4,11 @@
 import hotStore from './hotStore'
 import dailyStore from './dailyStore'
 import categoryStore from './categoryStore'
+import detailStore from './detailStore'
 
 export default {
   hotStore,
   dailyStore,
-  categoryStore
+  categoryStore,
+  detailStore
 }

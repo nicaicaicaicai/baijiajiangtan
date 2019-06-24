@@ -21,7 +21,14 @@ class App extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    pages: ['pages/hot/index', 'pages/daily/index', 'pages/category/index', 'pages/setting/index'],
+    pages: [
+      'pages/hot/index',
+      'pages/daily/index',
+      'pages/category/index',
+      'pages/setting/index',
+      'pages/detail/index',
+      'pages/detail/PlayAudio'
+    ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -37,26 +44,26 @@ class App extends Component {
     //     {
     //       pagePath: 'pages/hot/index',
     //       text: '热门推荐',
-    //       iconPath: './asset/images/index.png',
-    //       selectedIconPath: './asset/images/index_focus.png'
+    //       iconPath: './asset/images/tabbar/index.png',
+    //       selectedIconPath: './asset/images/tabbar/index_focus.png'
     //     },
     //     {
     //       pagePath: 'pages/daily/index',
     //       text: '每日更新',
-    //       iconPath: './asset/images/discovery.png',
-    //       selectedIconPath: './asset/images/discovery_focus.png'
+    //       iconPath: './asset/images/tabbar/discovery.png',
+    //       selectedIconPath: './asset/images/tabbar/discovery_focus.png'
     //     },
     //     {
     //       pagePath: 'pages/category/index',
     //       text: '分类',
-    //       iconPath: './asset/images/burger.png',
-    //       selectedIconPath: './asset/images/burger_focus.png'
+    //       iconPath: './asset/images/tabbar/burger.png',
+    //       selectedIconPath: './asset/images/tabbar/burger_focus.png'
     //     },
     //     {
     //       pagePath: 'pages/setting/index',
-    //       text: '设置',
-    //       iconPath: './asset/images/burger.png',
-    //       selectedIconPath: './asset/images/burger_focus.png'
+    //       text: '个人',
+    //       iconPath: './asset/images/tabbar/user.png',
+    //       selectedIconPath: './asset/images/tabbar/user_focus.png'
     //     }
     //   ]
     // }
