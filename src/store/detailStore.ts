@@ -11,9 +11,8 @@ const detailStore = observable({
     return this.detailItems
   },
 
-  getDetailById(sectionId: string): DetailIF {
-    this.detailItems = orderBy(testDetailItems, 'Sort', 'asc')
-    return this.detailItems.find((item: DetailIF) => item.SectionID === Number(sectionId))
+  getDetailById(sectionId: string) {
+    return testDetailItems.find((item: DetailIF) => item.SectionID === Number(sectionId))
   }
 })
 
